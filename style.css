@@ -1,0 +1,112 @@
+body{
+	margin: auto 0;
+	font-size: 20px;
+	background-color: #eaf0f7;
+    font-family: "IBM Plex Sans",sans-serif;
+    line-height: 1.5;
+
+}
+/*for small devices, take give the navbar no padding and reduce the fontsize*/
+@media only screen and (min-width: 800px){
+	nav{
+	padding: 0;
+	font-size: 0.5em;
+	}
+
+	.flex-content-container{
+		display: flex;
+	}
+	.right-side-content {
+		flex: 1;
+	}
+	.left-side-profile {
+		flex: 0 1 300px;
+	}
+}
+
+nav, footer {
+	background-color: #000;
+	color: #fff;
+	font-size: 20px;
+}
+nav {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
+}
+/*.sticky{
+	position: fixed;
+	margin: auto;
+	width: 100%;
+}*/
+#navbar-brand{
+	margin-right: auto;
+	padding: 15px;
+}
+
+.menu-list > ul {
+list-style: none;
+}
+.menu-list > ul > li {
+display: inline;
+margin: 20px;
+}
+
+.menu-list > ul > li > a{
+	text-decoration: none;
+	color: white;
+}
+
+/*cover page*/
+.cover {
+	width: 100%;
+	min-height: 300px;
+	
+}
+.wave {
+	position: relative;
+	/*background: linear-gradient(90deg, #f0027f,#75489f);*/
+}
+.wave::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 300px;
+	background: url(./img/waves.png);
+	background-size: cover;
+	background-repeat: repeat;
+}
+
+.wrapper {
+	margin: auto;
+	max-width: 75rem;
+}
+.flex-content-container{
+	padding: 20px;
+
+}
+.left-side-profile, .right-side-content{
+	padding: 20px;
+	border-radius: 8px;
+	color: white;
+}
+
+.left-side-profile{
+	background-color: #1a253f;	
+	height: 450px;
+}
+.profile-main-pic > img {
+	margin-left: 70px;
+	border-radius: 50%;
+}
+
+.right-side-content {
+	 background-color: #111;
+}
+
+footer {
+	border:none;
+	text-align: center;
+}
